@@ -10,6 +10,9 @@ class TV:
         self.control = None
         self.numTV += 1
 
+    def setNumTV(self, num):
+        self.numTV = num
+
     def setCanal(self, canal):
         if self.estado == True and canal > 0 and canal <= 120:
             self.canal = canal
