@@ -11,14 +11,6 @@ class TV:
         self.control = None
         TV.numTV += 1
 
-    @staticmethod
-    def setNumTV(num):
-        TV.numTV = num
-
-    @staticmethod
-    def getNumTV(self):
-        return TV.numTV
-
     def setCanal(self, canal):
         if self.estado == True and canal > 0 and canal <= 120:
             self.canal = canal
@@ -75,3 +67,11 @@ class TV:
     def volumenDown(self):
         if self.estado == True and self.volumen > 0:
             self.volumen -= 1
+
+    @staticmethod
+    def getNumTV():
+        return TV.numTV
+
+    @staticmethod
+    def setNumTV(num):
+        TV.numTV = num
