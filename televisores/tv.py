@@ -11,9 +11,11 @@ class TV:
         self.control = None
         TV.numTV += 1
 
+    @staticmethod
     def setNumTV(num):
         TV.numTV = num
 
+    @staticmethod
     def getNumTV(self):
         return TV.numTV
 
