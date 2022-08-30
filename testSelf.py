@@ -9,7 +9,7 @@ def testEnlazar():
     tv = TV(marca, True)
     control = Control()
     control.enlazar(tv)
-    assert(tv.getControl() != None)
+    assert (tv.getControl() != None)
 
 
 def testEnlazarControl():
@@ -20,4 +20,4 @@ def testEnlazarControl():
 
     control.enlazar(tv)
 
-    assert(control.getTv() != None)
+    assert (control.getTv() != None)
