@@ -1,6 +1,3 @@
-import televisores.Control
-
-
 class TV:
     canal = 1
     precio = 500
